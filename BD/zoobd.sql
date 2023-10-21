@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-10-2023 a las 22:57:44
+-- Tiempo de generación: 21-10-2023 a las 23:31:02
 -- Versión del servidor: 8.1.0
 -- Versión de PHP: 8.0.28
 
@@ -139,7 +139,7 @@ CREATE TABLE `tipoalimentacion` (
 --
 
 CREATE TABLE `usuario` (
-  `IdEmpleado` int NOT NULL,
+  `IdUsuario` int NOT NULL,
   `Nombre` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `Apellidos` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `Correo` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
@@ -217,8 +217,8 @@ ALTER TABLE `tipoalimentacion`
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`IdEmpleado`),
-  ADD KEY `EmpleadoFK` (`CatUsuario_id`);
+  ADD PRIMARY KEY (`IdUsuario`),
+  ADD KEY `UsuarioFK` (`CatUsuario_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -276,7 +276,7 @@ ALTER TABLE `tipoalimentacion`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `IdEmpleado` int NOT NULL AUTO_INCREMENT;
+  MODIFY `IdUsuario` int NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
@@ -306,7 +306,7 @@ ALTER TABLE `habitat`
 -- Filtros para la tabla `recorrido`
 --
 ALTER TABLE `recorrido`
-  ADD CONSTRAINT `RecorridoFK` FOREIGN KEY (`Guia_id`) REFERENCES `usuario` (`IdEmpleado`);
+  ADD CONSTRAINT `RecorridoFK` FOREIGN KEY (`Guia_id`) REFERENCES `usuario` (`IdUsuario`);
 
 --
 -- Filtros para la tabla `recorrido_habitat`
@@ -319,7 +319,7 @@ ALTER TABLE `recorrido_habitat`
 -- Filtros para la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD CONSTRAINT `EmpleadoFK` FOREIGN KEY (`CatUsuario_id`) REFERENCES `catusuario` (`IdCatUsuario`);
+  ADD CONSTRAINT `UsuarioFK` FOREIGN KEY (`CatUsuario_id`) REFERENCES `catusuario` (`IdCatUsuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
