@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ***************************** */
 /* Estilo del menu de navegacion */
 /* ***************************** */
@@ -8,7 +7,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 260px;
+    width: 200px;
     z-index: 100;
     transition: all 0.5s ease;
     padding-top: 4%;
@@ -215,83 +214,23 @@
     background-size: cover;
 }
 
-#header .logo span {
+#header .Titulo {
     font-size: 30px; /* Tamaño del texto del logotipo */
     font-weight: bold; /* Negrita */
     color: #bade57;
+}
+
+.Titulo{
     display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
 }
 
-#header a{
-    text-decoration: none;
-}
-
-#header .center{
-    margin-left: 280%;
-}
 /* ***************** */
 /* Fin estilo header */
 /* ***************** */
-
-=======
->>>>>>> gaborama
-/* ********************************* */
-/* Estilo de las tarjeta de animales */
-/* ********************************* */
-
-.container-presentacion{
-    display: flex;
-    margin-top: 80px;
-    margin-left: 80px;
-}
-.container-presentacion div{
-    border-radius: 20px;
-    margin-left: 10px;
-    height: 200px;
-    background-color: #fff;
-    flex: 1;
-    transition: all 0.3s ease;
-}
-
-.card1{
-    background-image: url('../img/leon.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.card2{
-    background-image: url('../img/aguila.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.card3{
-    background-image: url('../img/hipopotamo.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.card4{
-    background-image: url('../img/bandicoot.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.card5{
-    background-image: url('../img/jirafa.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container-presentacion div:hover{
-    flex: 2;
-    background-color: rgb(207, 207, 207);
-}
-/* ******************************* */
-/* Fin estilo tarjetas de animales */
-/* ******************************* */
