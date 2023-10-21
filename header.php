@@ -6,5 +6,4 @@
           <div class="center"><span class = "Titulo">ZooBrothers</span></div>
       </div><!-- FIN Logo -->
     </header><!-- End Header -->';
-
 ?>
