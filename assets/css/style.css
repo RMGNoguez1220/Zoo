@@ -1,6 +1,136 @@
 body{
-    overflow: hidden;
     background-color: #56877D;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%238CCC81' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23BADE57'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* REGISTRO  */
+.container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+}
+
+.Login-box{
+    text-align: center;
+    color: #fff;
+    width: 400px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Login-box h2{
+    padding-bottom: 15px;
+}
+
+.Login-box .user-box{
+    position: relative;
+}
+
+.Login-box .user-box label{
+    position: absolute;
+    top: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.Login-box .user-box input:focus + label, 
+.Login-box .user-box input:valid + label{
+    top: -20px;
+    color: #bade57;
+    font-size: 12px;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.user-box label{
+    text-align: start;
+}
+
+.user-box input{
+    min-width: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.label-form{
+    display: flex;
+    align-items: start;
+    margin-left: 15px; 
+}
+
+.opcion{
+    align-items: center;
+    margin: 10px 15px 15px 0;
+
+}
+
+.btn-form{
+    font-size: 20px;
+    background-color: #72de57dc;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.btn-form:hover{
+    background-color: #d0eb88;
+}
+
+.opcion input[type="radio"] {
+    display: none;
+}
+
+.opcion input[type="radio"]:checked + span {
+    font-weight: bold;
+    color: #bade57;
+    background-color: #56877D;
+    border:2px solid #000000;
+}
+
+.genero label span{
+    background: #67de5eaa;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.genero label span:hover{
+    background-color: #00000053;
+}
+
+/*LOGIN*/
+
+#show_password{
+    background-color: #72de57dc;
+    border-color: #000000 ;
+    translate: 140px -125px ;
+    margin-bottom: -200px;
+    font-size: 20px;
+    color: #000000;
+}
+
+#show_password span,
+.input-group-append{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#show_password:hover{
+    background-color: #d1eb88be;
+}
