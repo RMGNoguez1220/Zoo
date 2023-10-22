@@ -38,7 +38,7 @@
 
       <!-- ======= link Menu ======= -->
       <li>
-        <a href="index.html">
+        <a href="index.php">
           <i class='bx bx-grid-alt' ></i>
           <span class="link_name">Inico</span>
         </a>
@@ -49,7 +49,7 @@
 
       <!-- ======= Link Animales ======= -->
       <li>
-        <a href="animales.html" style="background-color: #95df58;">
+        <a href="animales.php">
           <i class='bx bxs-dog' ></i>
           <span class="link_name">Animales</span>
         </a>
@@ -80,41 +80,30 @@
         </ul>
       </li>
 
-      <!-- ======= Link Habitats ======= -->
+      <!-- ======= Link Login ======= -->
       <li>
-        <a href="#">
+        <a href="login.php">
           <i class='bx bx-log-in'></i>
           <span class="link_name">Login</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Login</a></li>
+          <li><a class="link_name" href="login.php">Login</a></li>
         </ul>
       </li>
 
-      <!-- ======= Link Habitats ======= -->
+      <!-- ======= Link Registro ======= -->
       <li>
-        <a href="#">
+        <a href="registro.php">
           <i class='bx bx-id-card'></i>
           <span class="link_name">Registro</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Registro</a></li>
+          <li><a class="link_name" href="registro.php">Registro</a></li>
         </ul>
       </li>
 
     </ul>
   </div>
 
-  <!-- Container presentacion -->
-  <div class="container-presentacion" style="margin-bottom: 10000px;">
-    <div class="card1"></div>
-    <div class="card2"></div>
-    <div class="card3"></div>
-    <div class="card4"></div>
-    <div class="card5"></div>
-  </div>
-
   <!-- ======= Script ======= -->
   <script src="assets/js/main.js"></script>
-</body>
-</html>
