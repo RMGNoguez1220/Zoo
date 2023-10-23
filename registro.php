@@ -47,8 +47,8 @@
             <input type="hidden" name="form_type" value="registro">
 
             <input class="btn-form" id="button" type="submit" value="Registrarse">
-            
         </form>
     </div></div>
 </body>
 </html>
+<script src="assets/js/validarcampo.js"></script>

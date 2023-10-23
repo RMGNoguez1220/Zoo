@@ -2,7 +2,7 @@
 class tools{
 
     function numRand(){
-        return rand()%9-1;
+        return rand(1,9);
     }
 
     function oper(){

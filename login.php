@@ -38,7 +38,8 @@
     </div></div>
 </body>
 </html>
-
+<script src="assets/js/validarcampo.js"></script>
+    
 <!-- Script para mostrar la contraseña -->
 <script type="text/javascript">
 
