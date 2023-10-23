@@ -44,9 +44,16 @@ body{
 }
 
 .Login-box .user-box input:focus + label, 
-.Login-box .user-box input:valid + label{
+.Login-box .user-box input:valid + label,
+.Login-box .user-box input.validarcampo + label{
     top: -20px;
     color: #bade57;
+    font-size: 12px;
+}
+
+
+.Login-box .user-box input.validarcampo:invalid + label{
+    color: red;
     font-size: 12px;
 }
 
