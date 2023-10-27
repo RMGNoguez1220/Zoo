@@ -39,7 +39,7 @@
 </body>
 </html>
 <script src="assets/js/validarcampo.js"></script>
-    
+
 <!-- Script para mostrar la contraseña -->
 <script type="text/javascript">
 
@@ -53,7 +53,6 @@
             $('.icon').removeClass('bx bx-show').addClass('bx bx-low-vision');
         }
     } 
-        
         
         $(document).ready(function () {
         //CheckBox mostrar contraseña
