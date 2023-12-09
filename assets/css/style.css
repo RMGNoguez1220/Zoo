@@ -4,17 +4,17 @@ body{
 }
 
 /* REGISTRO  */
-.container{
+.containers{
     display: flex;
     justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
-
 }
 
 .Login-box{
+  
     text-align: center;
     color: #fff;
     width: 400px;
@@ -140,4 +140,46 @@ body{
 
 #show_password:hover{
     background-color: #d1eb88be;
+}
+
+#formUsuario{
+    width: 400px;
+    background-color: #1c917aa2;
+    border-radius: 20px;
+}
+
+.container-Usuario{
+    margin: 20px;
+}
+
+.form-contend label,
+.form-contend label:not(:first-child){
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.jquery-confirm {
+    background-color: #c62020 !important;
+}
+
+.miFotoPerfil {
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px auto 10px auto; /* top, right, bottom, left */
+    display: block;
+}
+
+.miniPerfil{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 90px auto 10px auto;  /* top, right, bottom, left */
+    display: block;
+}
+
+.bx-menu:hover{
+    background: #bade57;
+    border-radius: 5px;
+    cursor: pointer;
 }
