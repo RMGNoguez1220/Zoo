@@ -14,9 +14,7 @@ body{
 }
 
 .Login-box{
-    top: 50%;
-    left: 50%;
-    transform: translate(100%, 45%);
+  
     text-align: center;
     color: #fff;
     width: 400px;
@@ -142,12 +140,6 @@ body{
 
 #show_password:hover{
     background-color: #d1eb88be;
-}
-
-.col-extra-wide {
-    max-width: 900%;  /* O el porcentaje que desees */
-    width: auto;
-    max-height: 0%;
 }
 
 #formUsuario{

@@ -1,14 +1,3 @@
-var dataPoints = [
-        { y: 6, label: "Aniamles" },
-        { y: 4, label: "Nombres" },
-        { y: 5, label: "Ciudades" },
-        { y: 7, label: "Flores" },
-        { y: 4, label: "Cosas" },
-        { y: 2, label: "Apellidos" },
-        { y: 9, label: "Colores" },
-        { y: 4, label: "Comidas" }
-    ];
-
 var Puntos = [
     // { y: 26, name: "School Aid"},
     // { y: 20, name: "Medical Aid" },
@@ -50,7 +39,7 @@ function EditPerfil(Id) {
         theme: 'material',
         title: "Editar Perfil",
         content: 'url: ../class/classUsuario.php?accion=Perfil',
-        columnClass: "col-md-6",
+        columnClass: "col-md-5",
         type: "green",
         buttons: {
             pruebame: {
@@ -140,23 +129,6 @@ function mostrarMisCategorias (accion,id) {
             });
         }
    })
-
-    // var chart = new CanvasJS.Chart("chartContainer", {
-    //     title: {
-    //         text: "Mis Categorias",
-    //         fontColor: "rgba(26, 223, 214, 0.959)"
-    //     },
-    //     backgroundColor: "#a42b2b00",
-    //     data: [{
-    //         type: "pie",
-    //         indexLabel: "{label} : #percent%",
-    //         toolTipContent: "{label}: {y}",
-    //         indexLabelFontColor: "black",
-    //         dataPoints: dataPoints
-    //     }]
-    // });
-
-    // chart.render();
 } 
 
 function cargaGrafica(){

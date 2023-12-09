@@ -58,7 +58,7 @@
 
       <!-- ======= Link Animales ======= -->
       <li>
-        <a href="animales.php">
+        <a href="#">
           <i class='bx bxs-dog' ></i>
           <span class="link_name">Animales</span>
         </a>
@@ -102,12 +102,12 @@
 
       <!-- ======= Cerrar Sesion ======= -->
       <li>
-        <a href="login.php">
+        <a href="../../index.php?e=8">
           <i class='bx bx-exit'></i>
           <span class="link_name">Cerrar Sesión</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="login.php">Cerrar Sesión</a></li>
+          <li><a class="link_name" href="../../index.php?e=8">Cerrar Sesión</a></li>
         </ul>
       </li>
       <?php echo '<img src="data:image/jpg;base64,' . base64_encode($fotoData) . '" alt="foto" class="miniPerfil" >';?>

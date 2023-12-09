@@ -3,7 +3,7 @@
     include "assets/class/classTools.php";
     include "cabecera.php"
 ?>
-    <div class="containers" style="translate: 110px 900px;">
+    <div class="containers" >
     <div class="Login-box" id="LoginMenu" >
 
         <h2>Registro</h2>
