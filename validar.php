@@ -9,19 +9,19 @@ if ( isset($_POST['Correo']) and isset($_POST['Clave']) ) {
     if ($objBD -> numRegistros) {
         $_SESSION['Nombre'] = $regi -> Nombre." ".$regi -> Apellidos;
 
-        $_SESSION['isAdmin'] = ($regi -> idtipousuario == 2)? true : false;
+        $_SESSION['isAdmin'] = ($regi -> CatUsuario_id == 2)? true : false;
         
-        $_SESSION['Correo'] = $regi -> Email;
+        $_SESSION['Correo'] = $regi -> Correo;
         
         $_SESSION['Id'] = $regi -> IdUsuario;
         
-        if ($regi -> idtipousuario == 1) {
-            header("location: users/home.php");
+        if ($regi -> CatUsuario_id == 1) {
+            header("location: assets/users/home.php");
         } else {
             header("location: admin/home.php");
         }
     } else {
-        header( "location: index.php?e=2");
+        header( "location: index.php?e=4");
     }
 
 } else {
