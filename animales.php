@@ -2,7 +2,7 @@
 include "cabecera.php";
 ?>
   <!-- Container presentacion -->
-  <div class="container-presentacion" style="margin-bottom: 10000px;">
+  <div class="container-presentacion" >
     <div class="card1"></div>
     <div class="card2"></div>
     <div class="card3"></div>

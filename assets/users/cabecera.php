@@ -47,53 +47,43 @@
 
       <!-- ======= link Menu ======= -->
       <li>
-        <a href="home.php">
-          <i class='bx bx-grid-alt' ></i>
-          <span class="link_name">Inico</span>
+        <a href="home.php" class="<?php echo (stripos(strtoupper($_SERVER["REQUEST_URI"]), "HOME") !== false) ? "active" : ""; ?>">
+            <i class='bx bx-grid-alt'></i>
+            <span class="link_name">Inicio</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Inico</a></li>
+            <li><a class="link_name" href="#">Inicio</a></li>
         </ul>
       </li>
 
+
       <!-- ======= Link Animales ======= -->
       <li>
-        <a href="#">
+        <a href="animales.php" class="<?php echo (stripos(strtoupper($_SERVER["REQUEST_URI"]), "ANIMALES") !== false) ? "active" : ""; ?>">
           <i class='bx bxs-dog' ></i>
           <span class="link_name">Animales</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Animales</a></li>
+          <li><a class="link_name" href="animales.php">Animales</a></li>
         </ul>
       </li>
       
       <!-- ======= Link Recorridos ======= -->
       <li>
-        <a href="#">
+        <a href="recorridos.php" class="<?php echo (stripos(strtoupper($_SERVER["REQUEST_URI"]), "Recorridos") !== false) ? "active" : ""; ?>">
           <i class='bx bx-bus'></i>
           <span class="link_name">Recorridos</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Recorridos</a></li>
-        </ul>
-      </li>
-
-      <!-- ======= Link Habitats ======= -->
-      <li>
-        <a href="#">
-          <i class='bx bx-leaf'></i>
-          <span class="link_name">Habitats</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Habitats</a></li>
+          <li><a class="link_name" href="recorridos.php">Recorridos</a></li>
         </ul>
       </li>
 
       <!-- ======= Perfil ======= -->
       <li>
-        <a href="javascript:usuario('Perfil')">
+        <a href="javascript:usuario('Perfil')" >
           <i class='bx bx-id-card'></i>
-          <span class="link_name">Perfil</span>
+          <span class="link_name ">Perfil</span>
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="javascript:usuario('Perfil')"><?php echo $_SESSION['Nombre']; ?> </a></li>

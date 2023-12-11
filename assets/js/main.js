@@ -20,7 +20,7 @@ function adjustImageSize() {
   if (sidebar.classList.contains("close")) {
     miniPerfil.style.width = "60px";
     miniPerfil.style.height = "50px";
-    miniPerfil.style.marginTop = "90px";
+    miniPerfil.style.marginTop = "140px";
     miniPerfil.style.marginRight = "auto";
     miniPerfil.style.marginBottom = "10px";
     miniPerfil.style.marginLeft = "auto";
